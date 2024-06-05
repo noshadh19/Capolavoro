@@ -1,0 +1,40 @@
+-- Crea il database inventarioscuola
+CREATE DATABASE IF NOT EXISTS inventarioscuola;
+
+-- Usa il database inventarioscuola
+USE inventarioscuola;
+
+-- Crea la tabella utenti
+CREATE TABLE IF NOT EXISTS utenti (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(30) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+-- Popola la tabella utenti con tre credenziali
+INSERT INTO utenti (username, password) VALUES 
+    ('utente1', 'password1'), 
+    ('utente2', 'password2'), 
+    ('utente3', 'password3');
+
+-- Crea la tabella inventario
+CREATE TABLE IF NOT EXISTS inventario (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    quantita INT(6) NOT NULL
+);
+
+
+
+-- Popola la tabella utenti con tre credenziali
+INSERT INTO utenti (username, password) VALUES 
+    ('utente1', 'password1'), 
+    ('utente2', 'password2'), 
+    ('utente3', 'password3');
+
+-- Crea la tabella inventario
+CREATE TABLE IF NOT EXISTS inventario (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    quantita INT(6) NOT NULL
+);
